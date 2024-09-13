@@ -1,0 +1,4 @@
+node_modules
+
+# el va a subir todo lo demas menos esa carpeta
+# es mala practica subir esa carpeta al git, ya que pesa mucho y se demora en cargar el codigo

@@ -1,0 +1,36 @@
+head -> infomacion uq va en el documento charset -> idioma del doc, descripcon del doc html
+body-> infroacion que se encuentra
+
+biermport -> forma de la que se visuliza el contenido: hiriontasl o vertical
+
+para la navegacion se usa -> nav
+etiqueta MAIN -> main -> seleccionar la seccion debajo del nav
+evitar usar divs
+
+el arterisco es seleccionar todo
+
+para sellecionar un elemnto de dos se hace : nav:: first-of-type -> seudoselectores en CSS
+
+
+JS
+
+documents.querySelectorAll -> para seleccionar todo
+
+[] -> array -> pueden contene robjetos, el arreglo es el papa ya dentro los hijos, los arrays solo tienen valore, es una caja en la cual puedo meter cajitas
+ { } -> object -> tienen cualidades, cada objeto funciona de forma indicidual -> tiene clave y valor
+estructura de la informacion -> infromacion
+FOR-> cada que da elemntos no va dejando un lemento de forma indiccidual
+
+
+FOREACH-> da todas las propiedades
+
+para accdeder a una propiedad del objeto, accdeo con la clave
+consolo.log(students[0].name)
+
+para agregar infromacion a u arreglo se usa PUSH
+
+para unshif -Z para que el elemnto se agregue de primero
+
+las funciones tipo flecha-> 
+
+version emascript de js -> EMCS6

@@ -1,0 +1,63 @@
+POO
+
+--> Un objeto tiene Key and value, el key es el atributo del objeto y value es el valor
+--> Los SQUARE BRACKETS NOTATION, permite accder a un atributo utilizando los corchetes, --> console.log(obj["name"]); // "John"
+--> IN OPERATOR --> Verifica si una propiedad existe en el objeto o no --> console.log("name" in obj); // true
+--> ENTRIES --> son las entrada, lo cual decuelve un array de pares, osea [la clave y el valor] --> console.log(Object.entries(obj)); // [["name", "John"], ["age", 30]]
+--> Flags and descriptors:
+Los descriptores de propiedades permiten configurar el comportamiento de las propiedades de un objeto. Hay tres banderas (flags) principales:
+
+writable: Si se puede modificar el valor.
+enumerable: Si se puede enumerar en un bucle.
+configurable: Si se puede modificar el descriptor.
+javascript
+
+let obj = {};
+Object.defineProperty(obj, 'name', {
+    value: "John",
+    writable: false,
+    enumerable: true,
+    configurable: true
+});
+
+Deep copy (Copia profunda): Copia todas las propiedades recursivamente.
+javascript
+Copiar código
+let obj3 = JSON.parse(JSON.stringify(obj1)); // obj3 es una copia profunda de obj1
+Cloning (Clonación): Crear una copia de un objeto.
+Merging (Combinación): Combinar múltiples objetos en uno solo.
+javascript
+Copiar código
+let obj4 = { d: 4 };
+let merged = Object.assign({}, obj1, obj4); // Combina obj1 y obj4
+
+Prototypes and prototypical inheritance:
+JavaScript usa un sistema de herencia basado en prototipos. Cada objeto tiene un prototipo, del cual hereda propiedades y métodos.
+
+javascript
+Copiar código
+function Person(name) {
+    this.name = name;
+}
+Person.prototype.sayHello = function() {
+    console.log(`Hello, my name is ${this.name}`);
+};
+let john = new Person("John");
+john.sayHello(); // "Hello, my name is John"
+
+
+
+
+
+
+CLASE 2
+
+SORT --> va ór posicion, tomando base el primero, va comparando y validando, va moviendo de cajitas esos prodcutos, de menor a mayor
+
+INDEX Y I --> son los mismo--> me dice en que parte del recorrido va, indicando cuando y hasta donde trabaja
+
+
+FOREACHA permite obetener cada elemnto de manera indidual
+MAp mapea un array y lo convierte en y lo returna, que queda gardado en una vaariables
+
+la diferndia ntre dos iguals es para validar, == (permisivo para datos), para buenas practicas ds ponen ños tres iguales, ninguna posibilidad que se cambien los datos

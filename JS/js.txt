@@ -1,0 +1,6 @@
+JAVASCRPIT
+
+request -> petición a un http
+
+disable cache -> desactiva el cache
+DOM ->arbol de elemntos de la pag
